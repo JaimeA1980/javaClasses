@@ -22,7 +22,7 @@ public class IQ6 {
 		}
 		System.out.println(reversed);
 		
-		if (original.contentEquals(reversed)) {
+		if (original.equals(reversed)) {
 			System.out.println("String is palindrome");
 		}else {
 			System.out.println("String is NOT palindrome");
