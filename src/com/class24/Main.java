@@ -26,8 +26,22 @@ package com.class24;
 
 public class Main {
 	String dogName;
-	String dogWeight;
+	double dogWeight;
 	static String dogBreed="Mutt";
+	
+	public void dog(String name, double weight, String breed) {		
+		dogName=name;
+		dogWeight=weight;
+		dogBreed=breed;	
+	}
+	
+	public void dog(String name, double weight) {
+		dogName = name;
+		dogWeight = weight;
+	}
+	public void display() {
+		System.out.println(dogName+dogWeight+dogBreed);
+	}
 	
 	
 	
