@@ -33,7 +33,7 @@ public class Task {
 		alist.add(10.10);
 		alist.add(true);
 		alist.add('c');
-		
+		// int y=alist.get(1)+alist.get(2) -->Compiler Error asks to typecast
 		System.out.println(alist);
 		
 		ArrayList<Double> list = new ArrayList<Double>();
