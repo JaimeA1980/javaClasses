@@ -40,6 +40,24 @@ public class Recap {
 		System.out.println(aList);
 		aList.addAll(hset);
 		System.out.println(aList);
+		///////////////////////////////////
+		// how can I access just 1 value from the Set collection
+		
+		Set<String> lset = new LinkedHashSet<>(); //keep the order
+		lset.add("Morning");
+		lset.add("Noon");
+		lset.add("Evening");
+		lset.add("Night");
+		//convert to the ArrayList
+		List<String> myList = new ArrayList<>();
+		myList.addAll(lset);
+		String element = myList.get(2);
+		System.out.println(element);
+		//another way to create an Object of ArrayList by passing values to the constructor
+		List<String> myList1 = new ArrayList<>(lset);
+		//LinkedList list good for removal
+		//ArrayList good for retrieval
+		
 		}
 
 }
